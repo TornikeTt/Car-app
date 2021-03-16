@@ -14,7 +14,7 @@ const renderPosts = async () => {
         show += `
         <div class="cards">
             <div class="cars-img">
-                <img class="u" src="${data.ImgUrl}" /> 
+                <img class="u" src="${data.ImgUrl}" alt="car photo" /> 
             </div>
 
 
