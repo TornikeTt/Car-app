@@ -1,0 +1,155 @@
+/* style for add car */
+
+.AddNewCar{
+    position: relative;
+    background-color: rgb(201, 219, 220);
+    width: 80%;
+    height: 450px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flex(row , center, center);
+    h1{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+}
+
+form {
+    width: 88%;
+    height: 95%;
+    @include flex(row , space-between, stretch);
+
+    fieldset{
+        border: none;
+    }
+}
+
+
+
+
+.left-side {
+    height: 100%;
+    @include flex(column , space-around, stretch);
+
+    .choose_model {
+        @include flex(column , flex-start , stretch); 
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 280px;
+        }
+        select {
+            margin-top: 10px;
+            width: 350px;
+            height: 30px;
+        }
+    }
+
+    .choose_image {
+        @include flex(column , flex-start , stretch); 
+        label {
+            width: 280px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input {
+            margin-top: 10px;
+            width: 350px;
+            height: 30px;
+        }
+    }
+
+    .CheckBoxses {
+       display: flex;
+       flex-direction: column;
+       div{
+           margin-top: 5px;
+           @include flex(row , flex-start, center);
+           input{
+               margin-left: 5px;
+           }
+       }
+    }
+}
+
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    @include flex(column, space-around , stretch);
+    textarea {
+        margin-top: 10px;
+        width: 100%;
+        height: 300px;
+        outline: none;
+        resize: none;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+
+    div{
+        @include flex(row , flex-end, center);
+        .reset {
+            width: 200px;
+            height: 40px;
+            background-color: red;
+            outline: none;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 13px;
+            transition-property: transform;
+            transition-duration: 0.2s;
+            margin-right: 15px;
+            &:active{
+                transform: scale(0.90); 
+                box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+            }
+        }
+
+        .submit {
+            width: 200px;
+            height: 40px;
+            background-color: $main-color;
+            outline: none;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 13px;
+            transition-property: transform;
+            transition-duration: 0.2s;
+            &:active{
+                transform: scale(0.90); 
+                box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+            }
+        }
+    }
+}
+
+
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    .close_img{
+        background-color: #ffff;
+        &:hover{
+            background-color: red;
+        }
+    }
+}

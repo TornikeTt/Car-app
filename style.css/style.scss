@@ -1,0 +1,171 @@
+@import "_MixinAndVar.scss";
+@import "_AddNewCar.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: white;
+    
+}
+
+header{
+    width: 80%;
+    height: 100px;
+    @include flex(row , space-between, center);
+    margin: auto;
+    button{
+        width: 150px;
+        height: 40px;
+        background-color: $main-color;
+        outline: none;
+        border-radius: 5%;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 15px;
+        transition-property: transform;
+        transition-duration: 0.2s;
+        
+        &:hover{
+            &::first-letter{
+                color: red;
+            }
+        }
+        &:active{
+            transform: scale(0.90); 
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+        }
+    }
+    h1{
+        color: $main-color;
+        font-size: 30px;
+        letter-spacing: 2px;
+        &::first-letter{
+            font-size: 35px;
+            color: red;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    width: 80%;
+    height: 378px;
+    background-color :rgba(233, 222, 222, 0.4);
+    margin: 50px auto;
+    border-bottom: 8px solid $main-color;
+    border-bottom-right-radius: 10%;
+    padding-bottom: 10px;
+    &:hover{
+        box-shadow: 5px 10px 8px 2px #888888;
+    }
+}
+
+.cars-img{
+    width: 40%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+    }
+}
+
+.About_cars_container{
+    width:60%;
+    height: 100%;
+    padding-left: 15px;
+    @include flex(column, space-around, stretch);
+    margin: auto;
+}
+
+.car_model {
+    width: 98%;
+    @include flex(row, space-between, stretch);
+    p span{
+        &:first-child{
+            font-weight: bold;
+            font-size: 18px;  
+            color: $main-color;
+        }
+        &:last-child{
+            font-weight: bold;
+        }
+    }
+    .Edit_delete{
+        @include flex(row, flex-end, center);
+        img{
+            &:first-child{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            &:last-child {
+                cursor: pointer;
+            }
+        }
+    }
+   
+}
+
+
+.AboutCar{
+    p{
+        &:first-child {
+            font-weight: bold;
+            font-size: 18px;  
+            margin-bottom: 10px;
+            color: #0ab49e
+        }
+    
+        &:last-child {
+            height: 80px;
+            overflow-y: auto;
+            line-height: 20px;
+        }
+    }
+   
+}
+
+
+.CarCharacters{
+    width: 95%;
+    p{
+        &:first-child{
+            font-weight: bold;
+            font-size: 18px;  
+            margin-bottom: 10px;
+            color: #0ab49e
+        }
+    }
+
+    .uls_lists{
+        @include flex(row , space-between , stretch);
+        ul{
+            li{
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+
+// loading 
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

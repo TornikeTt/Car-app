@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tornike Chargeishvili" />
+    <meta name="description" content="Frontend Task - HTML , CSS(sass) , Jquery , JavaScript" />
+    <link rel="stylesheet" href="style.css/style.css" /> 
+    <title>Car app</title>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <!--jQuery-->
+
+</head>
+<body>
+    <header>
+        <h1>Car Shop App</h1>
+        <button type="button" id="add_New_Car"> Add New Car</button>
+    </header>
+    <!--loading gif-->
+    <div class="loading">
+        <img src="photo/loadingGif.gif" alt="loading Gif" />
+    </div>
+    
+    <!--Database-->
+    <div class="Take"></div>
+
+    <!-- style for add car --> 
+    <div class="AddNewCar">
+        <div class="close">
+            <img src="photo/close.png" title="close window" alt="close icone for from" class="close_img" /> 
+        </div>
+        <form >  
+            <div class="left-side">
+
+                <fieldset class="choose_model" >
+                    <label for="cars">აირჩიეთ ავტომობილის მოდელი:</label> 
+                    <select id="cars" name="cars" required >
+                        <option disabled selected value="">ავტომობილის მოდელი...</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                    </select>
+                </fieldset>
+    
+                <filedset class="choose_image">
+                    <label for="img">ავტომობილის სურათი URL:</label>
+                    <input type="url" placeholder="URL.." id="img" name="img" required/>
+                </filedset>
+                
+                <fieldset class="CheckBoxses">
+                        <div>
+                            <label for="ABS">ABS</label>
+                            <input type="checkbox" id="ABS" name="ABS" value="true"/>
+                        </div>
+                        
+                        <div>
+                            <label for="GlassHoist">ელექტრო შუშების ამწევი</label>
+                            <input type="checkbox" id="GlassHoist" name="GlassHoist" value="true" />
+                        </div>
+
+                        <div>
+                            <label for="Sunroof">ლუქი</label>
+                            <input type="checkbox" id="Sunroof" name="Sunroof" value="true"/>
+                        </div>
+    
+                        <div>
+                            <label for="Bluetooth">Bluetooth</label>
+                            <input type="checkbox" id="Bluetooth" name="Bluetooth" value="true" />
+                        </div>
+               
+                        <div>
+                            <label for="Alarm" >სიგნალიზაცია</label>
+                            <input type="checkbox" id="Alarm" name="Alarm" value="true" />
+                        </div>
+             
+                        <div>
+                            <label for="ParkingControl">პარკინგკონტროლი</label>
+                            <input type="checkbox" id="ParkingControl" name="ParkingControl" value="true" />
+                        </div>
+
+                        <div>
+                            <label for="NavigationSystem">oნავიგაცია</label>
+                            <input type="checkbox" id="NavigationSystem" name="NavigationSystem" value="true"/>
+                        </div>
+                  
+                        <div>
+                            <label for="BoardComputer">ბორტკომპიუტერი</label>
+                            <input type="checkbox" id="BoardComputer" name="BoardComputer" value="true" />
+                        </div>      
+    
+                        <div>
+                            <label for="steeringwheel">მულტი საჭე</label>
+                            <input type="checkbox" id="steeringwheel" name="steeringwheel"  />
+                        </div>
+                </fieldset>
+
+            </div>
+    
+            <fieldset class="right-side">
+                <textarea  placeholder="ავტომობილის აღწერა ..." name="AboutCar" required  ></textarea>
+                
+                <div>
+                    <input type="reset" value="გასუფთავება" class="reset" /> 
+                    <input type="submit" value="შენახვა" class="submit" >
+                </div>
+            </fieldset>
+        
+            
+
+            
+        </form>
+    </div>
+
+    
+    <script src="animation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

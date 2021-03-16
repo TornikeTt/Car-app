@@ -1,0 +1,49 @@
+{
+  "cars": [
+    {
+      "ImgUrl": "http://127.0.0.1:5500/photo/Mercedes.jpg",
+      "Model": "Mercedes",
+      "AboutCar": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ",
+      "ABS": true,
+      "GlassHoist": true,
+      "Sunroof": true,
+      "Bluetooth": true,
+      "Alarm": true,
+      "ParkingControl": true,
+      "NavigationSystem": true,
+      "BoardComputer": true,
+      "steeringwheel": true,
+      "id": 1
+    },
+    {
+      "ImgUrl": "http://127.0.0.1:5500/photo/BMW.jpg",
+      "Model": "BMW",
+      "AboutCar": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ",
+      "ABS": true,
+      "GlassHoist": true,
+      "Sunroof": true,
+      "Bluetooth": true,
+      "Alarm": false,
+      "ParkingControl": true,
+      "NavigationSystem": true,
+      "BoardComputer": true,
+      "steeringwheel": false,
+      "id": 2
+    },
+    {
+      "ImgUrl": "http://127.0.0.1:5500/photo/Audi.jpg",
+      "Model": "Audi",
+      "AboutCar": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "ABS": true,
+      "GlassHoist": true,
+      "Sunroof": true,
+      "Bluetooth": true,
+      "Alarm": false,
+      "ParkingControl": false,
+      "NavigationSystem": true,
+      "BoardComputer": true,
+      "steeringwheel": false,
+      "id": 3
+    }
+  ]
+}
